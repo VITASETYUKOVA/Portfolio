@@ -1,0 +1,90 @@
+.nav__link {
+  display: block;
+  color: $main-color-text;
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 160%;
+  padding: 6.5px 20px;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    color: #ffff;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+  &:hover,
+  &:active {
+    color: $color-text-2;
+  }
+
+  &:hover {
+    color: $main-color-text-hover;
+  }
+
+  &:active {
+    color: $main-color-text;
+  }
+}
+
+.nav__link-btn {
+  display: inline-block;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #f8f6f1;
+  background-color: #0099ff;
+  border-radius: 4px;
+  width: 200px;
+  background-clip: padding-box;
+  padding: 12px 24px;
+  min-height: 54px;
+  cursor: pointer;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:active {
+    border-radius: 30px;
+    color: $color-text-2;
+
+    @media (max-width: $size-screen-tablet) {
+      border-radius: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.nav__item {
+  @media (max-width: $size-screen-tablet) {
+    flex-grow: 1;
+    font-size: 15px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}

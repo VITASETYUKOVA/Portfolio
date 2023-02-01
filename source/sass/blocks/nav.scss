@@ -1,0 +1,57 @@
+.nav {
+  margin-left: auto;
+
+  @media (max-width: $size-screen-tablet) {
+    margin-left: 0;
+  }
+}
+
+.nav__container {
+  display: flex;
+
+  @media (max-width: $size-screen-tablet) {
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    background-color: $color-background;
+    bottom: 0;
+    top: 70px;
+    padding-top: 15px;
+    transition: left 0.5s;
+
+    .nav--open & {
+      left: 0;
+    }
+  }
+}
+
+.nav__btn {
+  display: none;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+  }
+}
+
+.nav__list {
+  display: flex;
+  min-width: 400px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 50px;
+    position: static;
+    left: 0%;
+    transform: translate(0%);
+    align-self: center;
+  }
+}

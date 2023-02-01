@@ -1,0 +1,107 @@
+.Call.to.Action {
+  padding: 110px 97px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #333333;
+
+  @media (max-width: $size-screen-tablet) {
+    padding: 70px 50px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+.CTA__main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  @media (max-width: $size-screen-mobile) {
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+.CTA__heading {
+  line-height: 133%;
+  font-weight: 700;
+  font-size: 32px;
+  color: #ffffff;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+}
+
+.CTA__text {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 400;
+  margin-top: 24px;
+  color: #ffffff;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.CTA__button {
+  padding: 12px 24px;
+  background-color: #0099ff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 400;
+  max-height: 54px;
+  background-clip: padding-box;
+  color: #f8f6f1;
+  min-width: 200px;
+  margin-top: 40px;
+  text-align: center;
+  display: block;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    color: $color-text-2;
+  }
+
+  &:active {
+    background-color: $color-text-3;
+    color: $color-text-1;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.CTA__button {
+  grid-column: 2 / 3;
+}
+
+.CTA__description {
+  grid-column: 1 / 2;
+}
