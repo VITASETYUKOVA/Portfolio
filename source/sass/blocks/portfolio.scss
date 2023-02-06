@@ -177,6 +177,7 @@
 
 .portfolio__link--active {
   position: relative;
+  display: inline-block;
   color: $main-color-text;
   font-size: 18px;
   line-height: 160%;
@@ -264,4 +265,16 @@
   display: inline-block;
   margin-bottom: -2px;
   margin-left: 12px;
+}
+.portfolio__link--active::before   {
+  content: "";
+  position: absolute;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  vertical-align: middle;
+
 }
