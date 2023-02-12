@@ -8,6 +8,7 @@
     margin-bottom: 0;
     width: 100%;
     background-color: $color-background;
+    z-index: 100;
   }
 }
 
@@ -50,7 +51,7 @@
   line-height: 160%;
   text-align: center;
   color: $color-text-6;
-  background-color: #0099ff;
+  background-color: $color-background-2;
   border-radius: 4px;
   width: 200px;
   background-clip: padding-box;

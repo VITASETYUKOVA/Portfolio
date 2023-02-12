@@ -148,15 +148,15 @@
 
 .contact___button {
   padding: 12px 24px;
-  background-color: #0099ff;
-  border: 1px solid #ffffff;
+  background-color: $color-background-2;
+  border: 1px solid $color-text-4;
   border-radius: 4px;
   font-size: 18px;
   line-height: 160%;
   font-weight: 400;
   max-height: 54px;
   background-clip: padding-box;
-  color: #f8f6f1;
+  color: $color-text-4;
   min-width: 200px;
   margin-top: 40px;
   text-align: center;
@@ -197,7 +197,7 @@
   }
 
   &:active {
-    color: #0099ff;
+    color: $color-background-2;
   }
 }
 
@@ -235,10 +235,6 @@
   border-right: #fff;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
   margin-bottom: 32px;
-
-  @media (max-width: $size-screen-mobile) {
-    width: 90%;
-  }
 
   &:hover,
   &:active {

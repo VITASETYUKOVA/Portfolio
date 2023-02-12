@@ -65,8 +65,8 @@
   padding: 12px 24px;
   gap: 10px;
   color: #f8f6f1;
-  background-color: #0099ff;
-  border: 1px solid #ffffff;
+  background-color: $color-background-2;
+  border: 1px solid $color-text-4;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1;
@@ -103,15 +103,15 @@
 
 .promo__learn.button {
   padding: 12px 24px;
-  background-color: #ffffff;
-  border: 1px solid #0099ff;
+  background-color: $color-text-4;
+  border: 1px solid $color-background-2;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1;
   font-weight: 400;
   min-height: 54px;
   background-clip: padding-box;
-  color: #0099ff;
+  color: $color-background-2;
   max-width: 200px;
   margin-bottom: 288px;
   margin-left: 16px;

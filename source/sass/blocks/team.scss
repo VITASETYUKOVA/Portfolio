@@ -1,5 +1,5 @@
 .team {
-  background-color: rgba(0, 153, 255, 0.04);
+  background-color: $color-background-1;
   padding: 120px 80px;
   text-align: center;
 
@@ -94,7 +94,7 @@
   color: $main-color-text;
   margin-top: 16px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 28px;
 
   @media (max-width: $size-screen-tablet) {
@@ -138,9 +138,6 @@ img {
   object-position: center;
   display: block;
 
-  @media (max-width: $size-screen-mobile) {
-    width: 90%;
-  }
   @media (max-width: $size-screen-mobile) {
     height: auto;
     margin: 0 auto;
@@ -189,7 +186,7 @@ img {
 }
 
 .team__description {
-  background-color: #ffffff;
+  background-color: $color-text-4;
   border-radius: 4px;
   padding: 14px;
   position: absolute;

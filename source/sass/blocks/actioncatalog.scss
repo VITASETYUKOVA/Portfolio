@@ -2,7 +2,7 @@
   padding: 110px 97px;
   margin-left: 80px;
   margin-right: 80px;
-  background-color: #333333;
+  background-color: $main-color-text;
 
   @media (max-width: $size-screen-tablet) {
     padding: 70px 50px;
@@ -29,7 +29,7 @@
   line-height: 133%;
   font-weight: 700;
   font-size: 32px;
-  color: #ffffff;
+  color: $color-text-4;
 
   @media (max-width: $size-screen-tablet) {
     font-size: 30px;
@@ -47,7 +47,7 @@
   line-height: 160%;
   font-weight: 400;
   margin-top: 24px;
-  color: #ffffff;
+  color: $color-text-4;
 
   @media (max-width: $size-screen-tablet) {
     font-size: 12px;
@@ -65,15 +65,15 @@
 .CTA__button-submit,
 .CTA__button-btn {
   padding: 12px 24px;
-  background-color: #0099ff;
-  border: 1px solid #ffffff;
+  background-color: $color-background-2;
+  border: 1px solid $color-text-4;
   border-radius: 4px;
   font-size: 18px;
   line-height: 160%;
   font-weight: 400;
   max-height: 54px;
   background-clip: padding-box;
-  color: #f8f6f1;
+  color: $color-text-4;
   min-width: 200px;
   margin-top: 40px;
   text-align: center;

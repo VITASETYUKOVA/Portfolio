@@ -1,5 +1,5 @@
 .services {
-  background-color: rgba(0, 153, 255, 0.04);
+  background-color: $color-background-1;
   padding: 120px 80px;
   text-align: center;
 
@@ -72,7 +72,7 @@
 }
 
 .services__item {
-  background-color: #ffffff;
+  background-color: $color-text-4;
   max-width: 308px;
   text-align: center;
   padding: 12px 24px;
@@ -99,7 +99,7 @@
 .services__heading {
   color: $main-color-text;
   margin-top: 16px;
-  font-size: 29px;
+  font-size: 27px;
   line-height: 133%;
   font-weight: 700;
   text-align: center;
