@@ -140,11 +140,14 @@
   }
 }
 .contacts__location,
-.contacts__phone {
+
+.contacts__phone,
+.contacts__post, {
   display: flex;
 }
 
 .contacts__location,
+.contacts__post,
 .contacts__phone {
   margin-top: 20px;
 }
@@ -185,12 +188,17 @@
   background-clip: padding-box;
   color: $color-text-4;
   min-width: 200px;
-  margin-top: 40px;
   text-align: center;
   display: block;
+position: absolute;
+margin-top: 32px;
 
-  @media (max-width: $size-screen-mobile) {
-    margin: 0 20px 40px 20px;
+@media (max-width: $size-screen-tablet) {
+  min-width: 150px;
+}
+
+@media (max-width: $size-screen-mobile) {
+    margin: 50px 0;
     max-width: 200px;
   }
 
@@ -207,7 +215,7 @@
 
 .contact__box {
   display: flex;
-  @media (max-width: $size-screen-mobile) {
+    @media (max-width: $size-screen-mobile) {
     flex-direction: column;
   }
 }
@@ -316,6 +324,7 @@
 }
 
 .data__order {
+position: relative;
   @media (max-width: $size-screen-mobile) {
     padding-left: 20px;
     padding-right: 20px;
@@ -362,7 +371,6 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-
   border-radius: 50%;
   border: 2px solid $color-text-1;
 }
@@ -386,4 +394,5 @@
   top: 419px;
   left: 864px;
   margin-left: 120px;
+  margin-top: 70px;
 }

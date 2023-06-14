@@ -1,0 +1,114 @@
+.banner {
+  background: $color-background-2;
+  border-radius: 4px;
+  bottom: 24px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: $main-font;
+  line-height: normal;
+  padding: 16px;
+  position: fixed;
+  right: 30px;
+  text-align: left;
+  text-decoration: inherit;
+  transition: right 1.5s;
+  width: 350px;
+  height: 400px;
+  z-index: 200;
+  animation: 10s ease-in 5s infinite reverse both running show;
+
+  @media (max-width: $size-screen-mobile) {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.banner__heading {
+  font-family: $main-font;
+  font-size: 25px;
+  line-height: 1;
+  color: $main-color-text;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.banner__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+}
+
+.banner__closeModal {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 32px;
+  height: 32px;
+  border: 8px solid transparent;
+
+  &:hover::after,
+  &:hover::before {
+    background-color: red;
+  }
+
+  &::before,
+  &::after {
+    background: #221f1f;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+}
+
+.banner__proposal {
+  flex-grow: 1;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner--close {
+  display: none;
+}

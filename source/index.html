@@ -634,6 +634,17 @@
             </div>
           </div>
         </section>
+        <article class="banner banner--close">
+          <div class="banner__wrapper">
+            <h3 class="banner__heading">Lorem ipsum dolor</h3>
+            <div class="banner__ proposal">
+              <img src="/img/photo.png" alt="proposal" />
+            </div>
+          </div>
+          <button class="banner__btn">
+            <span class="banner__closeModal"></span>
+          </button>
+        </article>
       </main>
       <footer class="page-footer">
         <div class="wrapper">
@@ -767,10 +778,17 @@
       <button class="button-up">
         <span class="visually-hidden">button up</span>
       </button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
-        const btn = document.querySelector(".nav__btn");
-        const menu = document.querySelector(".nav");
-        btn.addEventListener("click", () => menu.classList.toggle("nav--open"));
+        $(".nav__btn").on("click", () => $(".nav").toggleClass("nav--open"));
+        $(".banner__btn").on("click", () =>
+          $(".banner").toggleClass("banner--close")
+        );
+        setTimeout(show, 3000);
+        function show() {
+          let banner = document.querySelector(".banner");
+          banner.classList.remove("banner--close");
+        }
       </script>
     </div>
   </body>
